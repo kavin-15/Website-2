@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: PP mori;
-    color: #c9c99f;
+    
 }
 
 html, body{
@@ -12,21 +12,30 @@ html, body{
 }
 
 .main{
-    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    width: 100vw;
+    min-height: 200vh;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    overflow: hidden;
 
 }
 .page1{
     min-height: 100vh;
     width: 100vw;
+    position: relative;
+    z-index: 2;
+    color: #c9c99f;
+    -webkit-text-stroke: 0.5px black;
 }
 #nav{
     height: 55px;
     width: 100%;
-    /* background-color: black; */
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
+    text-decoration: underline;
 }
 #nav img{
     height: 24px;
@@ -48,9 +57,6 @@ html, body{
     text-transform:  uppercase;
     font-weight: 600;
 }
-#nav h4:nth-child(1){
-     text-decoration: underline;
-}
 .page1 h1{
     font-size: 7vw;
     font-weight: 325;
@@ -64,13 +70,59 @@ html, body{
     font-family: PP mori;
     margin-left: 26vw;
 }
-.page1 video{
-    position: absolute;
-    top: 50%;
+.main video{
+    position: fixed;
     left: 50%;
-    transform: translate(-50%, -50%);
+    top: 50%;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: -2;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    
+}
+.page2{
+    min-height: 130vh;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    color: #c9c99f;
+    -webkit-text-stroke: 0.5px black;
+}
+.page2-content{
+    display: flex;
+}
+.page2 h1{
+    font-size: 7.5vw;
+    font-weight: 325;
+    font-family: PP mori;
+    margin-left: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.page2-left{
+    width: 40%;
+}
+.page2-left h2{
+    margin-top: 5vw;
+    margin-left: 2.5vw;
+    font-size: 4vw;
+    font-weight: 300;
+}
+.page2-right p{
+    margin-top: 8vw;
+    margin-left: 35vw;
+    width: 45%;
+    font-size: 2vw;
+}
+.page2 button{
+    width: 30%;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 37%;
+    margin-top: 2vw;
 }
