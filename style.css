@@ -79,7 +79,7 @@ html, body{
     object-fit: cover;
     z-index: -2;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     overflow: hidden;
     
 }
@@ -88,11 +88,13 @@ html, body{
     width: 100%;
     position: relative;
     z-index: 2;
+    padding: 100px, 5vw;
     color: #c9c99f;
     -webkit-text-stroke: 0.5px black;
 }
 .page2-content{
     display: flex;
+    padding: 0 5vw;
 }
 .page2 h1{
     font-size: 7.5vw;
